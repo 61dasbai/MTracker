@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MedViewModel extends AndroidViewModel {
@@ -21,6 +22,6 @@ public class MedViewModel extends AndroidViewModel {
     }
 
     LiveData<List<Med>> getAllMeds(){
-        return getAllMeds();
+        return allMeds;
     }
 }

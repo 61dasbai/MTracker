@@ -14,7 +14,11 @@ import java.util.List;
 
 public class MedAdapter extends RecyclerView.Adapter<MedAdapter.ViewHolder> {
 
-    private ArrayList<Med> meds;
+    private List<Med> meds;
+
+    public MedAdapter(List<Med> meds){
+        this.meds = meds;
+    }
 
     @NonNull
     @Override

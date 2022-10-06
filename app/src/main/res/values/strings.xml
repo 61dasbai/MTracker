@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MedManager</string>
+    <string name="med_dose_hint">Med Dose</string>
+    <string name="med_name_hint">Med Name</string>
 </resources>
