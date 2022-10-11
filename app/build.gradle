@@ -41,4 +41,7 @@ dependencies {
     annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
     androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
 
+    // Card View
+    implementation "androidx.cardview:cardview:1.0.0"
+
 }

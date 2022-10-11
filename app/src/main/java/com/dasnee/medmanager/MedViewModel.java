@@ -24,4 +24,8 @@ public class MedViewModel extends AndroidViewModel {
     LiveData<List<Med>> getAllMeds(){
         return allMeds;
     }
+
+    public void addMed(Med med) {
+        medRepo.insert(med);
+    }
 }

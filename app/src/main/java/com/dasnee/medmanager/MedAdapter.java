@@ -6,10 +6,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.lifecycle.LiveData;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MedAdapter extends RecyclerView.Adapter<MedAdapter.ViewHolder> {
@@ -24,7 +22,7 @@ public class MedAdapter extends RecyclerView.Adapter<MedAdapter.ViewHolder> {
     @Override
     public MedAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.card_med, parent, false);
+                .inflate(R.layout.text_med, parent, false);
 
         return new ViewHolder(view);
     }
@@ -50,8 +48,8 @@ public class MedAdapter extends RecyclerView.Adapter<MedAdapter.ViewHolder> {
         public ViewHolder(@NonNull View view){
             super(view);
 
-            medNameTV = view.findViewById(R.id.medNameTV);
-            medDoseTV = view.findViewById(R.id.medDoseTV);
+            medNameTV = view.findViewById(R.id.medNameTV_2);
+            medDoseTV = view.findViewById(R.id.medDoseTV_2);
         }
 
         public void fillCard(int position){
