@@ -24,7 +24,7 @@
         android:hint="@string/med_dose_hint"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@id/medNameET"
-        app:layout_constraintBottom_toTopOf="@id/saveButtom"
+        app:layout_constraintBottom_toTopOf="@id/nextButtom"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 

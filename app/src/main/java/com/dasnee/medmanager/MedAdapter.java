@@ -22,7 +22,7 @@ public class MedAdapter extends RecyclerView.Adapter<MedAdapter.ViewHolder> {
     @Override
     public MedAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.text_med, parent, false);
+                .inflate(R.layout.card_med, parent, false);
 
         return new ViewHolder(view);
     }
@@ -48,8 +48,8 @@ public class MedAdapter extends RecyclerView.Adapter<MedAdapter.ViewHolder> {
         public ViewHolder(@NonNull View view){
             super(view);
 
-            medNameTV = view.findViewById(R.id.medNameTV_2);
-            medDoseTV = view.findViewById(R.id.medDoseTV_2);
+            medNameTV = view.findViewById(R.id.medNameTV);
+            medDoseTV = view.findViewById(R.id.medDoseTV);
         }
 
         public void fillCard(int position){
