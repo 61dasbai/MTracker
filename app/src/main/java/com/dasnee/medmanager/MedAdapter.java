@@ -31,9 +31,6 @@ public class MedAdapter extends RecyclerView.Adapter<MedAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull MedAdapter.ViewHolder holder, int position) {
         holder.getMedNameTV().setText(meds.get(position).getMedName());
         holder.getMedDoseTV().setText(meds.get(position).getMedDose());
-
-        //holder.fillCard(position);
-
     }
 
     @Override

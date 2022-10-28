@@ -14,4 +14,25 @@ public class TimeTaken {
 
     @ColumnInfo(name="medId")
     private int medId;
+
+    public TimeTaken(long date, int medId){
+        this.date = date;
+        this.medId = medId;
+    }
+
+    public long getDate(){
+        return date;
+    }
+
+    public void setDate(long date){
+        this.date = date;
+    }
+
+    public int getMedId(){
+        return medId;
+    }
+
+    public void setMedId(int medId){
+        this.medId = medId;
+    }
 }

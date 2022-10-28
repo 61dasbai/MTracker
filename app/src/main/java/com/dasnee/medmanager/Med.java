@@ -2,6 +2,7 @@ package com.dasnee.medmanager;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 import java.time.LocalDateTime;
@@ -18,6 +19,10 @@ public class Med {
     private String medName;
     @ColumnInfo(name = "medDose")
     private String medDose;
+
+    @Ignore
+    Status currStatus;
+
 
     /*
     private LocalDate prescriptionDate;

@@ -19,6 +19,7 @@ public class AddMedActivity extends AppCompatActivity {
     EditText medDoseET;
 
     Button saveButton;
+    Button nextButton;
 
     Med med;
 
@@ -38,7 +39,9 @@ public class AddMedActivity extends AppCompatActivity {
         medNameET = findViewById(R.id.medNameET);
         medDoseET = findViewById(R.id.medDoseET);
 
-        saveButton = findViewById(R.id.saveButtom);
+        nextButton = findViewById(R.id.nextButton);
+
+        saveButton = findViewById(R.id.saveButton);
         saveButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (medNameET.getText() == null) {
@@ -73,5 +76,11 @@ public class AddMedActivity extends AppCompatActivity {
         });
 
 
+
+
+    }
+
+    protected void onResume() {
+        super.onResume();
     }
 }
