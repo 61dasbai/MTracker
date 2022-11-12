@@ -31,4 +31,8 @@ public class MedRepo {
             medDao.insert(med);
         });
     }
+
+    LiveData<Med> getMedById(int medId){
+        return
+    }
 }

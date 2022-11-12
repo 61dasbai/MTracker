@@ -20,4 +20,7 @@ public interface MedDao {
     @Query("SELECT * FROM med_table")
     LiveData<List<Med>> getMeds();
 
+    @Query("SELECT * FROM med_table WHERE medId = :medId")
+    LiveData<Med> getMedById(int medId);
+
 }

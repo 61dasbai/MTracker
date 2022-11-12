@@ -5,6 +5,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import java.sql.Date;
+import java.time.Instant;
 
 @Entity(tableName = "times_table")
 public class TimeTaken {
@@ -17,6 +18,11 @@ public class TimeTaken {
 
     public TimeTaken(long date, int medId){
         this.date = date;
+        this.medId = medId;
+    }
+
+    public TimeTaken(int medId){
+        this.date = Instant.now().getEpochSecond();
         this.medId = medId;
     }
 
@@ -35,4 +41,5 @@ public class TimeTaken {
     public void setMedId(int medId){
         this.medId = medId;
     }
+
 }
